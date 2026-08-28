@@ -1,0 +1,16 @@
+// Last updated: 8/28/2026, 9:15:04 AM
+1class Solution {
+2    public boolean isSubsequence(String s, String t) {
+3        int sp = 0;
+4        int tp = 0;
+5
+6        while (sp < s.length() && tp < t.length()) {
+7            if (s.charAt(sp) == t.charAt(tp)) {
+8                sp++;
+9            }
+10            tp++;
+11        }
+12
+13        return sp == s.length();        
+14    }
+15}
